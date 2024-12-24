@@ -4,7 +4,7 @@ body {
 
 .container {
   position: relative;
-  transform: translateY(60%);
+  transform: translateY(50%);
 }
 
 .box {
