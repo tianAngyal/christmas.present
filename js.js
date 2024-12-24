@@ -5,17 +5,18 @@ const animateGift = () => {
   document
     .getElementsByClassName("box-lid")[0]
     .classList.toggle("box-lid-animation");
-  //   window
-  //     .getComputedStyle(
-  //       document.getElementsByClassName("box-bowtie")[0],
-  //       "::before"
-  //     )
-  //     .getPropertyValue("animation");
+  window
+    .getComputedStyle(
+      document.getElementsByClassName("box-bowtie")[0],
+      "::before"
+    )
+    .getPropertyValue("animation");
 
-  //   window
-  //     .getComputedStyle(
-  //       document.getElementsByClassName("box-bowtie")[0],
-  //       "::after"
-  //     )
-  //     .getPropertyValue("animation");
+  window
+    .getComputedStyle(
+      document.getElementsByClassName("box-bowtie")[0],
+      "::after"
+    )
+    .getPropertyValue("animation");
+  document.getElementsByClassName("active")[0].classList.toggle("img");
 };

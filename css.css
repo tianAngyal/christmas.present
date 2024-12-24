@@ -40,9 +40,15 @@ body {
 .box-body .img {
   opacity: 0;
   transform: translateY(0%);
-  transition: all 0.5s;
+  transition: all 0.5s 2s;
   margin: 0 auto;
   display: block;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10em;
+  height: 10em;
 }
 /* .box-body:active {
   cursor: pointer;
@@ -54,10 +60,14 @@ body {
   -webkit-animation: box-body 2s forwards ease-in-out;
   animation: box-body 2s forwards ease-in-out;
 }
-.box-body:active .img {
-  opacity: 1;
+.box-body.active .img {
+  /* opacity: 1;
   z-index: 0;
-  transform: translateY(-157px);
+  transform: translateY(-157px); */
+
+  opacity: 1;
+  z-index: 10;
+  transform: translate(0px, -160px) rotate(90deg) scale(2);
 }
 .box-lid-animation {
   -webkit-animation: box-lid 2s forwards ease-in-out;
