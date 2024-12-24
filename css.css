@@ -1,12 +1,18 @@
 body {
   background: black;
+  margin: 0;
 }
 
 .container {
-  position: relative;
-  transform: translateY(50%);
+  /* position: relative;
+  transform: translateY(50%); */
+  width: 100vw;
+  height: 100vh;
 }
-
+.darcek {
+  position: relative;
+  transform: translateY(120%);
+}
 .box {
   position: relative;
 }
@@ -35,7 +41,7 @@ body {
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.3);
   background: linear-gradient(#762c2c, #ff0303);
   left: 50%;
-  transform: translate(-52%, 26%);
+  transform: translate(-50%, 26%);
 }
 .box-body .img {
   opacity: 0;
